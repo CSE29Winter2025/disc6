@@ -9,8 +9,6 @@ int main() {
 
     char *ptr = &num;
     for (int i = 0; i < sizeof(num); i++) {
-	ptr = ptr + i;
-
 	// printf("i: %d, addr: %x, contents: %u \n", i, ptr, *ptr);
 	printf("i: %d, addr: %x, contents: ", i, ptr);
 	
@@ -19,6 +17,7 @@ int main() {
 	    else printf("0");
 	}
 	printf("\n");
+	ptr++;
     }
 }
 
